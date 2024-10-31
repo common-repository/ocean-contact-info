@@ -1,0 +1,111 @@
+#contact-info-wrap
+{
+    position: relative;
+    padding: 20px 0;
+    color: #ddd;
+    border-top: 1px solid rgb(0 0 0 / 60%); 
+    background-color: rgb(0 0 0 / 60%);
+}
+#contact-info-wrap.hidden{
+    display: none;
+}
+#contact-info
+{
+    font-size: 18px;
+    font-weight: 600;
+
+    letter-spacing: .6px;
+}
+
+#contact-info-left,
+#contact-info-right
+{
+    display: block;
+    float: left;
+}
+
+#contact-info-left
+{
+    width: 75%;
+}
+
+#contact-info-left.full-width
+{
+    width: 100%;
+}
+
+#contact-info-right
+{
+    width: 23%;
+    margin-left: 2%;
+}
+
+.contact-info-content a
+{
+    color: #ffc300;
+}
+.contact-info-content a:hover
+{
+    color: #13aff0;
+}
+
+#contact-info .contactinfo-button
+{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+
+    display: inline-block;
+
+    width: 100%;
+    margin: 0;
+    padding: 12px 20px;
+
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: .1em;
+    text-transform: uppercase; 
+
+    color: #000;
+    border: 0;
+    border-radius: 7px;
+    background-color: #ffc300;
+}
+#contact-info .contactinfo-button:hover
+{
+    color: #fff; 
+    background-color: #0b7cac;
+}
+
+#contact-info-wrap span.contact-info-close{
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    cursor: pointer;
+    transform: rotate(45deg);
+    font-size: 18px;
+    line-height: 1;
+}
+
+/* Responsive */
+@media screen and (max-width: 767px)
+{
+    #contact-info
+    {
+        text-align: center;
+    }
+    #contact-info-left,
+    #contact-info-right
+    {
+        float: none; 
+
+        width: 100%;
+        margin: 0;
+    }
+    #contact-info-right
+    {
+        margin-top: 20px;
+        margin-right: 0 !important; 
+        margin-left: 0;
+    }
+}
